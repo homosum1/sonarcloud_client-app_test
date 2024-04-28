@@ -26,6 +26,8 @@ export const Navbar = (props: NavbarProps) => {
                             (totalCount, item) => totalCount + item.Quantity, 0
                         )
                     }
+
+                    
                 </span>
             </div>     
         </div>
