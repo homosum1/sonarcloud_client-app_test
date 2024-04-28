@@ -12,11 +12,11 @@ export const Navbar = (props: NavbarProps) => {
     return (
         <div className="navbar">       
             <div className="navbar__home">
-                <span onClick={() => navigate("/")} className="material-symbols-outlined" onKeyDown={()=>{}}>
+                <button onClick={() => navigate("/")} className="material-symbols-outlined" onKeyDown={()=>{}}>
                     home
-                </span>
+                </button>
             </div>
-            <div className="navbar__cart" onClick={()=> navigate("/payment")} onKeyDown={()=>{}}>
+            <button className="navbar__cart" onClick={()=> navigate("/payment")} onKeyDown={()=>{}}>
                 <span className="material-symbols-outlined">
                     shopping_bag
                 </span>
@@ -27,9 +27,9 @@ export const Navbar = (props: NavbarProps) => {
                         )
                     }
 
-                    
+
                 </span>
-            </div>     
+            </button>     
         </div>
 
 
