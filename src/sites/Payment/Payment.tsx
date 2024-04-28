@@ -46,8 +46,8 @@ export const Payment = (props: PaymentProps) => {
 
                 <ul>
                 { 
-                    props.selectedItems.map((item, index) => (
-                        <li>
+                    props.selectedItems.map((item) => (
+                        <li key={item.item.ID}>
                             <span>{item.item.Name} - </span>
                             <span>{item.item.Price.toFixed(2)}zł x {item.Quantity} = </span>
                             <span>{(item.item.Price * item.Quantity).toFixed(2)}zł</span>
@@ -61,8 +61,8 @@ export const Payment = (props: PaymentProps) => {
                 Wykonaj zakup
             </button>
             { 
-                messages.map((el, index) => (
-                    <div className="Payment__message">{el}</div>
+                messages.map((el) => (
+                    <div key={el} className="Payment__message">{el}</div>
                 ))
             
             }
