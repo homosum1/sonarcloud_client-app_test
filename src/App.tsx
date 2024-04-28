@@ -56,6 +56,7 @@ function App() {
   return (
     <div className='App'>
       <Navbar selectedItems={selectedItems}/>
+      <div>{error}</div>
       <Routes>
         <Route path="" element={ <MainPage items={items} selectedItems={selectedItems} setSelectedItems={setSelectedItems}/>} />
         <Route path="/payment" element={ <Payment selectedItems={selectedItems} setSelectedItems={setSelectedItems}/>} />
