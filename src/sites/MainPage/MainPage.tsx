@@ -1,4 +1,4 @@
-import { Dispatch, SetStateAction, useEffect, useState } from "react";
+import { Dispatch, SetStateAction } from "react";
 import "./mainPage.scss";
 
 import { Item, SelectedItem } from "../../App";
