@@ -83,6 +83,7 @@ export const MainPage = (props: MainPageProps) => {
 
                     {
                         <div className="data">
+                            <span>aaaa</span>
                             <div><span>Podgląd stanu:</span></div>
                             <span>{JSON.stringify(props.selectedItems)}</span>
                         </div>
