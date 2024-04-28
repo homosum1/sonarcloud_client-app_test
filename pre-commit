@@ -1,6 +1,6 @@
 #!/bin/bash
 
-FILES=$(git diff --cached --name-only --diff-filter=ACM | grep "\.js$")
+FILES=$(git diff --cached --name-only --diff-filter=ACM | grep "\.(js|ts)$")
 
 if [ "$FILES" = "" ]; then
   echo "Brak nowych plików do sprawdzenia przez ESLint."
