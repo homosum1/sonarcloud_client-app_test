@@ -75,6 +75,7 @@ export const MainPage = (props: MainPageProps) => {
                                     <span onClick={() => addItem(item.ID)}>+</span>
                                     <span onClick={() => removeItem(item.ID)}>-</span>
                                 </div>
+                                
                             </div>
                         ))
                     }
@@ -82,6 +83,7 @@ export const MainPage = (props: MainPageProps) => {
 
                     {
                         <div className="data">
+                            <div></div>
                             <div><span>Podgląd stanu:</span></div>
                             <span>{JSON.stringify(props.selectedItems)}</span>
                         </div>
