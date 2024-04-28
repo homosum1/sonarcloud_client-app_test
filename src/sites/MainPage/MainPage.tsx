@@ -72,8 +72,8 @@ export const MainPage = (props: MainPageProps) => {
                                     <span>Quantity: {item.Quantity}</span>
                                 </div>
                                 <div className="mainPage__item__right">
-                                    <span onClick={() => addItem(item.ID)}>+</span>
-                                    <span onClick={() => removeItem(item.ID)}>-</span>
+                                    <span onClick={() => addItem(item.ID)} onKeyDown={()=>{}}>+</span>
+                                    <span onClick={() => removeItem(item.ID)} onKeyDown={()=>{}}>-</span>
                                 </div>
                                 
                             </div>

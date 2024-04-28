@@ -57,7 +57,7 @@ export const Payment = (props: PaymentProps) => {
             </ul>
             <h4>Koszt całkowity: {totalCost.toFixed(2)}zł</h4>
             
-            <div onClick={handlePurchase} className="Payment__buy-button">
+            <div onClick={handlePurchase} className="Payment__buy-button" onKeyDown={()=>{}}>
                 Wykonaj zakup
             </div>
             { 
